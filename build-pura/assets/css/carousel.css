@@ -1,0 +1,136 @@
+.carousel {
+    position: relative;
+
+    height: 15rem;
+    width: 100%;
+    max-width: 2048px;
+
+    overflow: hidden;
+}
+
+.carousel__marca {
+    display: none;
+}
+
+.carousel__seta {
+    position: absolute;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 2rem;
+    width: 100%;
+    top: 5%;
+    z-index: 10;
+}
+
+.carousel__seta-botao {
+    background-color: transparent;
+    border: none;
+}
+
+.carousel__lista-produtos {
+    position: relative;
+
+    height: 100%;
+
+    transition: transform .25s;
+}
+
+.carousel__produto {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+
+    width: 100%;
+}
+
+.carousel__imagem-container {
+    width: 100%;
+    height: 100%;
+}
+
+.carousel__imagem {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.carousel__indicadores {
+    position: absolute;
+    bottom: 0;
+
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    background-color: var(--cinza-escuro-transparaente)
+}
+
+.carousel__indicador {
+    width: 1.5rem;
+    height: 1.5rem;
+
+    background-color: var(--branco);
+
+    border-radius: 50%;
+    border: 4px solid var(--cinza-escuro);
+    
+    margin: .5rem 1rem;
+}
+
+.carousel__indicador--ativo {
+    background-color: var(--verde-oliva);
+    border: 4px solid var(--branco);
+}
+
+@media screen and (min-width: 768px) {
+    .carousel {
+        height: 30rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .carousel {
+        height: 40rem;
+    }
+
+    .carousel__marca {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        z-index: 10;
+    }
+
+    .carousel__titulo {
+        color: var(--verde-oliva);
+        font-weight: 700;
+        font-size: 3rem;
+        text-transform: uppercase;
+        padding-top: .5rem;
+        padding-bottom: 1rem;
+    }
+    
+    .carousel__slogan {
+        color: var(--verde-escuro);
+        font-weight: 700;
+        font-size: 1.3rem;
+        padding-bottom: 1rem;
+    }
+
+    .carousel__seta {
+        top: 20%;
+    }
+
+    .carousel__indicadores {
+        padding-top: .5rem;
+        padding-bottom: .5rem;
+    }
+
+    .carousel__indicador {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+}

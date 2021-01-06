@@ -1,0 +1,113 @@
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--cinza-medio);
+    background: linear-gradient(to right bottom, var(--cinza-medio) 50%, var(--cinza-escuro) 50%);
+    padding-top: 1rem;
+}
+
+.formulario__container {
+    width: calc(100% - 2rem);
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario__nome {
+    width: calc(100% - .6rem);
+    background-color: var(--cinza-projetos);
+    border-radius: 10px;
+    margin-bottom: 0.3rem;
+    padding: .3rem
+}
+
+.formulario__nome input {
+    width: 95%;
+    background-color: var(--cinza-projetos);
+    border: none;
+}
+
+.formulario__email {
+    background-color: var(--cinza-projetos);
+    border-radius: 10px;
+    margin-bottom: 0.3rem;
+    padding: 0.3rem;
+}
+
+.formulario__email input {
+    width: 90%;
+    color: var(--cinza-escuro);
+    background-color: var(--cinza-projetos);
+    border: none;
+}
+
+.formulario__telefone {
+    background-color: var(--cinza-projetos);
+    border-radius: 10px;
+    margin-bottom: 0.3rem;
+    padding: 0.3rem
+}
+
+.formulario__telefone input {
+    width: 90%;
+    background-color: var(--cinza-projetos);
+    border: none;
+}
+
+.formulario__mensagem {
+    display: flex;
+    width: calc(100% - 0.6rem);
+    background-color: var(--cinza-projetos);
+    border-radius: 10px;
+    margin-bottom: 0.3rem;
+    padding: 0.3rem
+}
+
+.formulario__mensagem textarea {
+    width: 50%;
+    border: none;
+    background-color: var(--cinza-projetos);
+}
+
+.formulario__botao {
+    background-color: var(--branco);
+    color: var(--cinza-escuro);
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    width:100%;
+    max-width: 18rem;
+}
+
+@media screen and (min-width: 768px) {
+    .formulario__container {
+        width: calc(100% - 2rem);
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .formulario__nome {
+        width: calc(100% - 2rem);
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+    .formulario__email {
+        width: calc(50% - 2.5rem);
+        padding: 1rem;
+        margin-right: 1rem;
+        margin-bottom: 1rem;
+    }
+    .formulario__telefone {
+        width: calc(50% - 2.5rem);
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+    .formulario__mensagem {
+        width: calc(100% - 2rem);
+        padding: 1rem;
+    }
+}

@@ -1,0 +1,16 @@
+:root {
+    --branco: #ffffff;
+    --cinza-claro: #fefefe;
+    --cinza-medio: #6f6f6f;
+    --cinza-escuro: #454545;
+    --cinza-moldura: #343434;
+    --cinza-projetos: #bebebe;
+    --cinza-formulario:#707070;
+    --cinza-botao: #333333;
+    --verde-oliva: #546130;
+    --verde-escuro: #3c4623;
+
+    --cinza-escuro-transparaente: #454545AB;
+    
+    --roboto: 'Roboto', sans-serif;
+}

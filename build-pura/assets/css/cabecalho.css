@@ -1,0 +1,55 @@
+.cabecalho {
+    background-color: var(--cinza-escuro);
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cabecalho__divisao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cabecalho__titulo {
+    color: var(--cinza-claro);
+    font-weight: 700;
+    font-size: 2rem;
+    text-transform: uppercase;
+    padding-top: .5rem;
+    padding-bottom: 1rem;
+}
+
+.cabecalho__slogan {
+    color: var(--branco);
+    font-weight: 400;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+
+.cabecalho__segunda-divisao {
+    align-items: center;
+    display: flex;
+    width: 100vw;
+}
+
+.botao-pula-secao {
+    position: absolute;
+    width: 3rem;
+    height: 5rem;
+    top: 5%;
+    background-color: transparent;
+    background-image: url(../img/icons/seta-para-baixo.svg);
+    background-repeat: no-repeat;
+    border: none;
+    z-index: 10;
+}
+
+@media screen and (min-width: 1024px) {
+    .cabecalho {
+        display: none;
+    }
+}
